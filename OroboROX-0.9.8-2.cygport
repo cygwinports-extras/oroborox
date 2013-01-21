@@ -1,9 +1,0 @@
-inherit rox
-
-SRC_URI="mirror://sourceforge/rox/${P}.tar.bz2"
-SRC_DIR="."
-
-PATCH_URI="0.9.8-platform.patch"
-
-ROX_APP=${PN}
-ROX_WRAPPER=${PN}

@@ -1,0 +1,19 @@
+inherit rox
+
+NAME="OroboROX"
+VERSION=0.9.8
+RELEASE=3
+CATEGORY="ROX X11"
+SUMMARY="ROX window manager"
+DESCRIPTION="ROX is a fast, user friendly desktop based on RISC OS which makes
+extensive use of drag-and-drop. The interface revolves around the file manager,
+or filer, following the traditional Unix view that 'everything is a file' rather
+than trying to hide the filesystem beneath start menus, wizards, or druids.
+This package provides a window manager."
+SRC_URI="mirror://sourceforge/rox/${P}.tar.bz2"
+SRC_DIR="."
+
+PATCH_URI="0.9.8-platform.patch"
+
+ROX_APP=${PN}
+ROX_WRAPPER=${PN}
