@@ -1,0 +1,13 @@
+--- origsrc/OroboROX/src/Makefile.in	2006-03-04 15:19:13.000000000 -0600
++++ src/OroboROX/src/Makefile.in	2013-06-23 21:06:58.277154300 -0500
+@@ -35,10 +35,6 @@ ${PROG}: ${OBJECTS}
+ 	${CC} -o "${PROG}" ${OBJECTS} ${LDFLAGS}
+ 	[ -d "${PLATFORM_DIR}" ] || mkdir "${PLATFORM_DIR}"
+ 	mv "${PROG}" "${PLATFORM_DIR}"
+-	-(cd "${PLATFORM_DIR}" && \
+-	 objcopy --only-keep-debug OroboROX OroboROX.dbg && \
+-	 strip OroboROX && \
+-	 objcopy --add-gnu-debuglink=OroboROX.dbg OroboROX)
+ 
+ clean:
+ 	rm -f *.o Makefile.bak

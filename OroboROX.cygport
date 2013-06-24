@@ -13,7 +13,8 @@ This package provides a window manager."
 SRC_URI="mirror://sourceforge/rox/${P}.tar.bz2"
 SRC_DIR="."
 
-PATCH_URI="0.9.8-platform.patch"
+PATCH_URI="0.9.8-platform.patch
+	   0.9.8-no-strip.patch"
 
 ROX_APP=${PN}
 ROX_WRAPPER=${PN}
